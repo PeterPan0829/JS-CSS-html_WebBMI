@@ -1,10 +1,10 @@
-var checked = document.querySelector('.checked')
+var checked = document.querySelector('.checked') // 取得 DOM 方式有： querySelector() 和 querySelectorAll() 方式來取得 DOM。
 var bminum = JSON.parse(localStorage.getItem('bminum')) || [] // JSON.parse(string) ：接受一個JSON 字符串並將其轉換成一個JavaScript 對象。
 var lvch = document.querySelector('.lvch') // window.localStorage ： 放在localStorage的資料會永久保存，直到被使用者清除。
 var list = document.querySelector('.container2')
 
 //監聽
-lvch.addEventListener('click', bmi)
+lvch.addEventListener('click', bmi) // JavaScript 最重要的就是監聽（listen）各種事件來觸發程式碼。我們使用 addEventListener 來監聽事件處理。
 list.addEventListener('click', listdel)
 updatelist(bminum)
 
@@ -81,7 +81,7 @@ function updatelist() {
 //刪除資料
 function listdel(e) {
     var del = e.target.nodeName
-    if (del !== "A") {
+    if (del !== "A") { // 不完全相等, 如果 del 和 "A" 的值或型別不相等則為true
         return
     }
     var num = e.target.dataset.num

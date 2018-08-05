@@ -1,13 +1,12 @@
 var checked = document.querySelector('.checked')
-var bminum = JSON.parse(localStorage.getItem('bminum')) || []
-var lvch = document.querySelector('.lvch')
+var bminum = JSON.parse(localStorage.getItem('bminum')) || [] // JSON.parse(string) ：接受一個JSON 字符串並將其轉換成一個JavaScript 對象。
+var lvch = document.querySelector('.lvch') // window.localStorage ： 放在localStorage的資料會永久保存，直到被使用者清除。
 var list = document.querySelector('.container2')
 
 //監聽
 lvch.addEventListener('click', bmi)
 list.addEventListener('click', listdel)
 updatelist(bminum)
-
 
 //存入資料
 function bmi(e) {
@@ -22,14 +21,14 @@ function bmi(e) {
         bmi: bmi,
         day: day
     }
-    bminum.push(bmiarr)
+    bminum.push(bmiarr) //push 方法會將一或多個值加入至一個陣列中。
     updatelist(bminum)
-    localStorage.setItem('bminum', JSON.stringify(bminum))
+    localStorage.setItem('bminum', JSON.stringify(bminum)) //將資料轉為 JSON 格式的字串。JSON.stringify(obj) ：接受一個JavaScript 對象並將其轉換為一個JSON 字符串。
     //BMI分級顏色圈
     if (bmi < 18.5) {
-        lvch.setAttribute('class', 'lvck lvck-b')
+        lvch.setAttribute('class', 'lvck lvck-b') //在頁面中創建一個script標籤物件，使用setAttribute設定屬性
         lvch.innerHTML = '<span class="checked-v">' + bmi + '</span><br><span class="checked-b">BMI</span><div class="loop loopbg-b"> <img src="img/icons_loop.png" alt=""></div>'
-    } else if (bmi >= 18.5 && bmi <= 23.9) {
+    } else if (bmi >= 18.5 && 23.9) {
         lvch.setAttribute('class', 'lvck lvck-g')
         lvch.innerHTML = '<span class="checked-v">' + bmi + '</span><br><span class="checked-b">BMI</span><div class="loop loopbg-g"> <img src="img/icons_loop.png" alt=""></div>'
     } else if (bmi > 24 && bmi <= 27.9) {
@@ -45,7 +44,6 @@ function bmi(e) {
         lvch.setAttribute('class', 'lvck lvck-r')
         lvch.innerHTML = '<span class="checked-v">' + bmi + '</span><br><span class="checked-b">BMI</span><div class="loop loopbg-r"> <img src="img/icons_loop.png" alt=""></div>'
     }
-
 }
 
 
@@ -74,7 +72,6 @@ function updatelist() {
             bmilv = '重度肥胖'
             color = 'color-r'
         }
-
         str += '<div class="list"><div class="color ' + color + '"></div><h3 class="lv">' + bmilv + '</h3><span class="bmi">BMI</span><h3 class = "bminum">' + bminum[i].bmi + '</h3> <span class = "weight"> weight </span><h3 class = "weightnum"> ' + bminum[i].weight + 'kg</h3><span class = "height"> height </span> <h3 class = "heightnum"> ' + bminum[i].height + 'cm </h3><time datetime =""  class = "time">' + bminum[i].day + ' </time><a href="#"  data-num="' + i + '"> 刪除 </a></div>'
     }
     list.innerHTML = str;

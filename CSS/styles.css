@@ -147,7 +147,7 @@ body {
 /*header*/
 
 header {
-    background: #424242;
+    background: #494848;
     height: 300px;
 }
 
@@ -173,14 +173,14 @@ header {
 h5 {
     font-family: 微軟正黑體;
     font-size: 18px;
-    color: #FFD366;
+    color: rgb(91, 227, 231);
     margin-top: 23px;
 }
 
 .cm,
 .kg {
-    background: rgba(255, 255, 255, 0.18);
-    border: 2px solid #FFD366;
+    background: rgba(230, 228, 228, 0.192);
+    border: 2px solid rgb(91, 227, 231);
     border-radius: 10px;
     font-size: 24px;
     color: rgba(255, 255, 255, 0.50);
@@ -198,7 +198,7 @@ h5 {
 }
 
 .checked {
-    background: #FFD366;
+    background: rgb(91, 227, 231);
     width: 120px;
     height: 120px;
     border: 0;
@@ -303,12 +303,12 @@ h5 {
 }
 
 .checked:hover {
-    background: #FFD366;
-    box-shadow: 0 1px 6px 3px rgba(255, 195, 49, 0.64);
+    background: rgb(0, 255, 255, 0.64);
+    box-shadow: 0 1px 6px 3px rgb(113, 235, 240);
 }
 
 .checked:active {
-    background: #DEA921;
+    background: rgb(91, 227, 231);
 }
 
 /*container*/
@@ -447,7 +447,7 @@ footer {
     position: absolute;
     bottom: 0;
     height: 90px;
-    background: #FFD366;
+    background: rgb(91, 227, 231);
     width: 100%;
 }
 
@@ -458,9 +458,9 @@ footer {
     top: 18px;
     margin: 0 auto;
     display: block;
-    filter: brightness(35%);
-    -webkit-filter: brightness(35%);
-    -moz-filter: brightness(35%);
-    -o-filter: brightness(35%);
-    -ms-filter: brightness(35%);
+    filter: brightness(75%);
+    -webkit-filter: brightness(75%);
+    -moz-filter: brightness(75%);
+    -o-filter: brightness(75%);
+    -ms-filter: brightness(75%);
 }

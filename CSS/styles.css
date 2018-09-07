@@ -88,7 +88,6 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-
 article,
 aside,
 details,
@@ -145,7 +144,6 @@ body {
 }
 
 /*header*/
-
 header {
     background: #494848;
     height: 300px;
@@ -312,7 +310,6 @@ h5 {
 }
 
 /*container*/
-
 .section {
     padding-top: 20px;
     padding-bottom: 200px;
@@ -441,7 +438,6 @@ a {
 }
 
 /*footer*/
-
 footer {
     /*margin: 100px auto 0;*/
     position: absolute;

@@ -1,0 +1,462 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background: #ccc;
+    min-height: 100%;
+    position: relative;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+/*header*/
+header {
+    background: #494848;
+    height: 300px;
+}
+
+.container {
+    /*position: relative;*/
+    width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.logo {
+    width: 117px;
+    height: 117px;
+    margin: 92px 97px 91px 173px;
+    float: left;
+}
+
+.input {
+    float: left;
+    margin-top: 51px;
+}
+
+h5 {
+    font-family: 微軟正黑體;
+    font-size: 18px;
+    color: rgb(91, 227, 231);
+    margin-top: 23px;
+}
+
+.cm,
+.kg {
+    background: rgba(230, 228, 228, 0.192);
+    border: 2px solid rgb(91, 227, 231);
+    border-radius: 10px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.50);
+    font-family: 微軟正黑體;
+    margin-top: 7px;
+    padding-left: 16px;
+}
+
+.lvch {
+    /*position: relative;*/
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin: 92px 0 88px 53px;
+}
+
+.checked {
+    background: rgb(91, 227, 231);
+    width: 120px;
+    height: 120px;
+    border: 0;
+    border-radius: 50%;
+    /*margin: 92px 0 88px 53px;*/
+    font-family: 微軟正黑體;
+    font-size: 24px;
+    color: #424242;
+}
+
+.checked>p {
+    text-align: center;
+    padding-top: 48px;
+}
+
+.lvck {
+    position: relative;
+    float: left;
+    background: #424242;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 92px 0 88px 53px;
+    padding-top: 35px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.lvck-g {
+    border: 6px solid #86D73E;
+    color: #86D73F;
+}
+
+.lvck-b {
+    border: 6px solid #31BAF9;
+    color: #31BAF9;
+}
+
+.lvck-o {
+    border: 6px solid #FF982D;
+    color: #FF982D;
+}
+
+.lvck-bo {
+    border: 6px solid #FF6C02;
+    color: #FF6C02;
+}
+
+.lvck-bbo {
+    border: 6px solid #FF6C02;
+    color: #FF6C02;
+}
+
+.lvck-r {
+    border: 6px solid #FF1200;
+    color: #FF1200;
+}
+
+.checked-v {
+    font-family: 微軟正黑體;
+    font-size: 32px;
+}
+
+.checked-b {
+    font-family: 微軟正黑體;
+    font-size: 14px;
+}
+
+.loop {
+    border: 3px solid #424242;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    box-sizing: border-box;
+    position: relative;
+    left: 75px;
+}
+
+.loopbg-g {
+    background: #86D73E;
+}
+
+.loopbg-b {
+    background: #31BAF9;
+}
+
+.loopbg-o {
+    background: #FF982D;
+}
+
+.loopbg-bo {
+    background: #FF6C02;
+}
+
+.loopbg-bbo {
+    background: #FF6C02;
+}
+
+.loopbg-r {
+    background: #FF1200;
+}
+
+.checked:hover {
+    background: rgb(0, 255, 255, 0.64);
+    box-shadow: 0 1px 6px 3px rgb(113, 235, 240);
+}
+
+.checked:active {
+    background: rgb(91, 227, 231);
+}
+
+/*container*/
+.section {
+    padding-top: 20px;
+    padding-bottom: 200px;
+}
+
+.container2 {
+    position: relative;
+    width: 624px;
+    min-height: 100%;
+    top: 76px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.title {
+    font-family: 微軟正黑體;
+    font-size: 24px;
+    color: #424242;
+    position: relative;
+    top: 48px;
+    text-align: center;
+}
+
+.list {
+    background: #FFFFFF;
+    width: 624px;
+    height: 62px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.color {
+    float: left;
+    width: 7px;
+    height: 62px;
+}
+
+.color-g {
+    background: #86D73F;
+    box-shadow: 2px 0 3px 0 rgba(133, 215, 63, 0.29);
+}
+
+.color-b {
+    background: #31BAF9;
+    box-shadow: 2px 0 3px 0 rgba(49, 186, 249, 0.29);
+}
+
+.color-o {
+    background: #FF982D;
+    box-shadow: 2px 0 3px 0 rgba(255, 152, 45, 0.29);
+}
+
+.color-bo {
+    background: #FF6C02;
+    box-shadow: 2px 0 3px 0 rgba(255, 108, 2, 0.29);
+}
+
+.color-bbo {
+    background: #FF6C02;
+    box-shadow: 2px 0 3px 0 rgba(255, 108, 2, 0.29);
+}
+
+.color-r {
+    background: #FF1200;
+    box-shadow: 2px 0 3px 0 rgba(255, 17, 0, 0.29);
+}
+
+h3,
+a {
+    font-size: 20px;
+    color: #4A4A4A;
+    font-family: 微軟正黑體;
+    float: left;
+    margin-left: 10px;
+    margin-top: 21px;
+    position: relative;
+}
+
+.lv {
+    width: 80px;
+}
+
+.bmi,
+.weight,
+.height,
+.time {
+    float: left;
+    font-size: 12px;
+    color: #424242;
+    font-family: 微軟正黑體;
+    overflow: hidden;
+    margin-top: 25px;
+    position: relative;
+}
+
+.bmi {
+    left: 3%;
+}
+
+.weight {
+    left: 5%;
+}
+
+.height {
+    left: 10%;
+}
+
+.bminum {
+    left: 3%;
+}
+
+.weightnum {
+    left: 5%;
+}
+
+.heightnum {
+    left: 10%;
+}
+
+.time {
+    left: 13%;
+}
+
+a {
+    left: 15%;
+}
+
+/*footer*/
+footer {
+    /*margin: 100px auto 0;*/
+    position: absolute;
+    bottom: 0;
+    height: 90px;
+    background: rgb(91, 227, 231);
+    width: 100%;
+}
+
+.logoS {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 18px;
+    margin: 0 auto;
+    display: block;
+    filter: brightness(75%);
+    -webkit-filter: brightness(75%);
+    -moz-filter: brightness(75%);
+    -o-filter: brightness(75%);
+    -ms-filter: brightness(75%);
+}

@@ -2,7 +2,7 @@
 
 
 * BMI-Calculator DEMO
-* https://cdn.rawgit.com/PeterPanTW/JS-CSS-html_WebBMI/master/index.html
+* https://rawgit.com/PeterPanTW/JS-CSS-html_WebBMI/master/index.html
 
 ## BMI數值說明
 * BMI ＜ 18.5 = 過瘦
